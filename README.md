@@ -4,3 +4,14 @@ this thing is to create an (auto)ssh connection to a public ip server, and creat
 
 Created for myself, so minimal documentation.
 
+==INSTALLATION==
+on HA Web UI:
+ 
+Settings → Add-ons → Add-on Store
+⋮ → Repositories
+
+Add this exact URL:
+ohttps://github.com/ozgurgesli/homeassistant-autossh_tunnel
+
+Then refresh the page and check if “AutoSSH Tunnel” appears under add-ons.
+
