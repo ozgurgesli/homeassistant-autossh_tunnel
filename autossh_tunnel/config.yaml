@@ -1,5 +1,5 @@
 name: "AutoSSH Tunnel"
-version: "1.0.3"
+version: "1.0.4"
 slug: "autossh_tunnel"
 description: "Reverse SSH tunnel to service.tilda.com.tr for HA 8123"
 
