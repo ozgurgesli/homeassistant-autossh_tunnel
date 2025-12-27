@@ -1,0 +1,29 @@
+name: "AutoSSH Tunnel"
+version: "1.0.3"
+slug: "autossh_tunnel"
+description: "Reverse SSH tunnel to service.tilda.com.tr for HA 8123"
+
+arch:
+  - aarch64
+  - armv7
+  - armhf
+
+startup: services
+boot: auto
+host_network: true
+
+options:
+  user: "youruseronserverhere"
+  host: "like.yourhost.com"
+  remote_bind: "like.yourhost.com:8123"
+  local_target: "ha.local:8123"
+
+schema:
+  user: str
+  host: str
+  remote_bind: str
+  local_target: str
+
+map:
+  - config:rw
+
