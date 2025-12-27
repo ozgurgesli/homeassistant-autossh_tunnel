@@ -19,10 +19,21 @@ options:
   local_target: "ha.local:8123"
 
 schema:
-  user: str
-  host: str
-  remote_bind: str
-  local_target: str
+  user: 
+    type: str
+    description: "your username on the server like username@bigcompany.com"
+
+  host:
+    type: str
+    description: "your server to connect to like bigcompany.com"
+
+  remote_bind:
+    type: str
+    description: "like bigcompany.com:8123 8123 on this server will be forwarded back to local_target"
+
+  local_target:
+    type: str
+    description: "most likely ha.local:8123 or 192.168.0.52:8123, keep in mind that because this will run in a docker container, 127.0.0.1 or localhost most likely won't be what you're looking for."
 
 map:
   - config:rw
